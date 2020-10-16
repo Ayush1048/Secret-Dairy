@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Project</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:600'>
+
+      <link rel="stylesheet" href="./assets/css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="center">
+  <h1 style="color: white"><p style="font-size: 40px"><b style="font-family: 'Roboto', sans-serif;">Secret Diary</b></p></h1>
+  <h3 style="color: white"><p style="font-size: 20px">Store your thoughts permanently and securely.</p></h3>
+  <br>
+  <p style="color: white">Interested Sign up now.</p>
+  </div>
+
+  <div class="login-wrap">
+  <div class="login-html">
+    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab"></label>
+    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+    <div class="login-form">
+      <form class="sign-in-htm" action="./api/user/login.php" method="GET">
+        <div class="group">
+          
+          <input id="username" name="username" type="text" class="input" placeholder="Your Email">
+        </div>
+        <div class="group">
+          
+          <input id="password" name="password" type="password" class="input" data-type="password" placeholder="Password">
+        </div>
+        <div class="group">
+          <input id="check" type="checkbox" class="check" checked>
+          <label for="check"><span class="icon"></span> Stay logged in</label>
+        </div>
+        <div class="group">
+          <input type="submit" class="button" value="Sign In">
+        </div>
+
+        <br>
+          <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+        <br>
+
+        
+      </form>
+      <form class="sign-up-htm" action="./api/user/signup.php" method="POST">
+        <div class="group">
+          
+          <input id="username" name="username" type="text" class="input" placeholder="Your Email">
+        </div>
+        <div class="group">
+        
+          <input id="password" name="password" type="password" class="input" data-type="password" placeholder="Password">
+        </div>
+        <div class="group">
+          
+          <input id="pass" type="password" class="input" data-type="password" placeholder="Confirm Password">
+        </div>
+        <div class="group">
+          <input type="submit" class="button" value="Sign Up">
+        </div>
+
+        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+
+        
+      </form>
+    </div>
+  </div>
+</div>
+  
+  
+
+</body>
+
+</html>
